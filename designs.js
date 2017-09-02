@@ -4,7 +4,8 @@
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid() {
-
+// after Upadating my course of FEND I found this project very difficult I am unable to implement what is written here
+// Please let me know about the resources from where I can learn how to complete these projects
 // Your code goes here!
 
 }
