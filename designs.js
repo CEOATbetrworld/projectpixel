@@ -1,8 +1,9 @@
 // Select color input
 // Select size input
 
-var rows = document.getElementById("input_height").value;
-var column = document.getElementById("input_width").value;
+let rows = document.getElementById("input_height").value;
+let column = document.getElementById("input_width").value;
+
 // When size is submitted by the user, call makeGrid()
 document.getElementById("submit").addEventListener("click",makeGrid());
 
