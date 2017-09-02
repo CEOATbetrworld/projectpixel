@@ -1,12 +1,30 @@
 // Select color input
 // Select size input
 
+var rows = document.getElementById("input_height").value;
+var column = document.getElementById("input_width").value;
 // When size is submitted by the user, call makeGrid()
+document.getElementById("submit").addEventListener("click",makeGrid());
 
 function makeGrid() {
-// after Upadating my course of FEND I found this project very difficult I am unable to implement what is written here
-// Please let me know about the resources from where I can learn how to complete these projects
-//Please either downgrade my nanodegree or let me from where I can learn to build these projects.
-// Your code goes here!
+    console.log("called");
+    console.log(rows,column);
+      table = document.getElementById("pixel_canvas");
+  for (let i = 0 ; i < rows; i++) {
+    row = table.insertRow();
+    for(let j = 0 ; j < column ;j++){
+    row.insertCell();
+    }
+  }
 
 }
+
+
+
+
+
+
+
+
+
+
