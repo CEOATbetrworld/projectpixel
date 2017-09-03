@@ -1,11 +1,5 @@
-// Select color input
-// Select size input
 
-
-// When size is submitted by the user, call makeGrid()
-
-
-const submitButton = getElementById('submitButton');
+const submitButton = document.getElementById('submitButton');
 submitButton.addEventListener("click", function(e) {
   
   e.preventDefault(); 
@@ -17,6 +11,10 @@ function makeGrid() {
     let rows = document.getElementById('input_height').value;
     let columns = document.getElementById('input_width').value;
     console.log(rows, columns);
+    if(rows > 48 || columns > 48 ){
+        alert("Value of rows or columns can not be more than 48")
+    }
+    else{
 
     table = document.getElementById("pixel_canvas");
 
@@ -29,4 +27,5 @@ function makeGrid() {
             });
         }
     }
+}
 }
