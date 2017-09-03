@@ -4,40 +4,22 @@ let color = document.getElementById("colorPicker").value;
 
 
 // When size is submitted by the user, call makeGrid()
-document.getElementById("submitButton").addEventListener("click",makeGrid);
+document.getElementById("submitButton").addEventListener("click", makeGrid);
 
 function makeGrid() {
-	let rows = document.getElementById('input_height').value;
-  let  columns = document.getElementById('input_width').value;
-    console.log(rows , columns);
+    let rows = document.getElementById('input_height').value;
+    let columns = document.getElementById('input_width').value;
+    console.log(rows, columns);
 
- table = document.getElementById("pixel_canvas");
+    table = document.getElementById("pixel_canvas");
 
-  for (let i=0; i < rows; i++) 
-  {
-    row = table.insertRow();  // DOM method for creating table rows
-    for(let j = 0 ; j < columns ; j++)
-    {
-    row.insertCell().addEventListener("click",function(){
-    let color = document.getElementById("colorPicker").value;
-     this.style.backgroundColor = color;});
+    for (let i = 0; i < rows; i++) {
+        row = table.insertRow(); // DOM method for creating table rows
+        for (let j = 0; j < columns; j++) {
+            row.insertCell().addEventListener("click", function() {
+                let color = document.getElementById("colorPicker").value;
+                this.style.backgroundColor = color;
+            });
+        }
     }
-  }
- }
-
-
-
- 
-
-
-
-
-
- 
-
-
-
-
-
-
- 
+}
